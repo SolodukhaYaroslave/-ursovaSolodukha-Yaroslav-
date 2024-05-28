@@ -1,0 +1,35 @@
+SELECT 
+    book.id as book_id,
+    book.title, 
+    GROUP_CONCAT(DISTINCT COALESCE(pen_name, CONCAT(author.first_name, ' ', author.last_name)) ORDER BY author.last_name ASC) AS author, 
+    publishing_house.name AS publishing_house,     
+    issue_of_book.date, 
+    issue_of_book.return_book,
+    client.id AS client_id,
+    CONCAT(client.first_name, ' ', client.last_name) AS full_name_client, 
+    client.phone, 
+    client.sub_end_date
+FROM 
+    issue_of_book
+JOIN 
+    book ON book.id = issue_of_book.book_id
+JOIN 
+    book_author ON book.id = book_author.book_id
+JOIN 
+    author ON book_author.author_id = author.id 
+JOIN 
+    publishing_house ON book.publishing_id = publishing_house.id
+JOIN 
+    client ON issue_of_book.client_id = client.id
+WHERE 
+    issue_of_book.return_book = 'false' AND client.id = @client_id 
+GROUP BY 
+    book_id,
+    book.title, 
+    issue_of_book.date, 
+    issue_of_book.return_book, 
+    publishing_house.name, 
+    client.id, 
+    full_name_client, 
+    client.phone, 
+    client.sub_end_date;

@@ -1,0 +1,23 @@
+SELECT 
+    book.id as 'ID', 
+    title as 'Hазва', 
+    GROUP_CONCAT(DISTINCT genre.name ORDER BY genre.name ASC) AS 'Жанри', 
+    GROUP_CONCAT(DISTINCT COALESCE(pen_name, CONCAT(first_name, ' ', last_name)) ORDER BY last_name ASC) AS 'Автори', 
+    publishing_house.name AS 'Видавництво', 
+    year_of_publication as 'Рік публікації', amount_of_stoke as 'На складі', amount_of_all as 'Всього'
+FROM 
+    book
+JOIN 
+    book_genre ON book.id = book_genre.book_id
+JOIN 
+    genre ON book_genre.genre_id = genre.id
+JOIN 
+    book_author ON book.id = book_author.book_id
+JOIN 
+    author ON book_author.author_id = author.id
+JOIN 
+    publishing_house ON book.publishing_id = publishing_house.id
+WHERE 
+    amount_of_stoke > 0
+GROUP BY 
+    book.id, title, publishing_house.name, year_of_publication;
