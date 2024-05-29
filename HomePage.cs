@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -231,6 +232,8 @@ namespace MyLibrary
             dataGridBook.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridBook.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridBook.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            dataGridBook.BackgroundColor = Color.FromArgb(241, 241, 241);
         }
         private void SetTableLayoutPanel()
         {
@@ -779,12 +782,13 @@ namespace MyLibrary
 
         private void ClientBookTable()
         {
-            if (textBox3.Text == "") return;
+            string id = idUser;
+            if (textBox3.Text != "") id = textBox3.Text;
 
             sql = "select client.id AS client_id, CONCAT(client.first_name, ' ', client.last_name) AS full_name_client, client.phone, client.sub_end_date from client where id = @client_id";
             using (cmd = new MySqlCommand(sql, ConnOpen()))
             {
-                cmd.Parameters.AddWithValue("@client_id", textBox3.Text);
+                cmd.Parameters.AddWithValue("@client_id", id);
                 cmd.ExecuteNonQuery();
 
                 using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -852,6 +856,11 @@ namespace MyLibrary
 
         private void button14_Click(object sender, EventArgs e)
         {
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("Поле порожне");
+                return;
+            }
             ClientBookTable();
         }
 
@@ -877,7 +886,7 @@ namespace MyLibrary
             return false;
         }
 
-        private void SetDateWithColor(ref Label label, string dateText)
+        private void SetDateWithColor(ref System.Windows.Forms.Label label, string dateText)
         {
             if (string.IsNullOrEmpty(dateText))
             {

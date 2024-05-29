@@ -35,7 +35,6 @@ namespace MyLibrary
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@ namespace MyLibrary
             this.dataGridBook = new System.Windows.Forms.DataGridView();
             this.tpSub = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbDateSub = new System.Windows.Forms.Label();
@@ -77,6 +75,9 @@ namespace MyLibrary
             this.BookId3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.Publishing1 = new System.Windows.Forms.Label();
+            this.Publishing2 = new System.Windows.Forms.Label();
+            this.Publishing3 = new System.Windows.Forms.Label();
             this.tpControl = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -131,9 +132,8 @@ namespace MyLibrary
             this.tbClFN = new System.Windows.Forms.TextBox();
             this.tbClPh = new System.Windows.Forms.TextBox();
             this.tbClP = new System.Windows.Forms.TextBox();
-            this.Publishing1 = new System.Windows.Forms.Label();
-            this.Publishing2 = new System.Windows.Forms.Label();
-            this.Publishing3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tpBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -141,7 +141,6 @@ namespace MyLibrary
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
             this.tpSub.SuspendLayout();
@@ -149,7 +148,6 @@ namespace MyLibrary
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -181,24 +179,25 @@ namespace MyLibrary
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
             // 
-            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl.Controls.Add(this.tpBook);
             this.tabControl.Controls.Add(this.tpSub);
             this.tabControl.Controls.Add(this.tpControl);
             this.tabControl.Controls.Add(this.tpClient);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tabControl.Location = new System.Drawing.Point(0, 4);
+            this.tabControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1065, 614);
+            this.tabControl.Size = new System.Drawing.Size(1067, 618);
             this.tabControl.TabIndex = 0;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.MainForm_Resize);
             // 
@@ -210,7 +209,7 @@ namespace MyLibrary
             this.tpBook.Margin = new System.Windows.Forms.Padding(5);
             this.tpBook.Name = "tpBook";
             this.tpBook.Padding = new System.Windows.Forms.Padding(5);
-            this.tpBook.Size = new System.Drawing.Size(1057, 573);
+            this.tpBook.Size = new System.Drawing.Size(1059, 577);
             this.tpBook.TabIndex = 0;
             this.tpBook.Text = "Книги";
             this.tpBook.UseVisualStyleBackColor = true;
@@ -225,7 +224,7 @@ namespace MyLibrary
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.splitContainer1.Panel1.Controls.Add(this.panel1);
             this.splitContainer1.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             // 
@@ -234,8 +233,8 @@ namespace MyLibrary
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel9);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridBook);
-            this.splitContainer1.Size = new System.Drawing.Size(1047, 563);
-            this.splitContainer1.SplitterDistance = 77;
+            this.splitContainer1.Size = new System.Drawing.Size(1049, 567);
+            this.splitContainer1.SplitterDistance = 83;
             this.splitContainer1.TabIndex = 0;
             // 
             // panel1
@@ -250,6 +249,7 @@ namespace MyLibrary
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
@@ -266,6 +266,7 @@ namespace MyLibrary
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.textBox1.Location = new System.Drawing.Point(172, 0);
             this.textBox1.Multiline = true;
@@ -274,35 +275,24 @@ namespace MyLibrary
             this.textBox1.TabIndex = 2;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::MyLibrary.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(593, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // tableLayoutPanel9
             // 
+            this.tableLayoutPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.tableLayoutPanel9.ColumnCount = 4;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.36364F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.63636F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
             this.tableLayoutPanel9.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.button2, 3, 0);
             this.tableLayoutPanel9.Controls.Add(this.textBox2, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 432);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 430);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1047, 50);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1049, 50);
             this.tableLayoutPanel9.TabIndex = 5;
             // 
             // label11
@@ -320,19 +310,21 @@ namespace MyLibrary
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button2.Location = new System.Drawing.Point(795, 7);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(249, 35);
+            this.button2.Size = new System.Drawing.Size(251, 35);
             this.button2.TabIndex = 2;
             this.button2.Text = "Повернення";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox2.Location = new System.Drawing.Point(181, 5);
             this.textBox2.Name = "textBox2";
@@ -343,18 +335,20 @@ namespace MyLibrary
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button1.Location = new System.Drawing.Point(553, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(236, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "Видача";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridBook
             // 
+            this.dataGridBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.dataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridBook.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridBook.Location = new System.Drawing.Point(0, 0);
@@ -362,7 +356,7 @@ namespace MyLibrary
             this.dataGridBook.ReadOnly = true;
             this.dataGridBook.RowHeadersWidth = 62;
             this.dataGridBook.RowTemplate.Height = 28;
-            this.dataGridBook.Size = new System.Drawing.Size(1047, 482);
+            this.dataGridBook.Size = new System.Drawing.Size(1049, 480);
             this.dataGridBook.TabIndex = 0;
             // 
             // tpSub
@@ -374,7 +368,7 @@ namespace MyLibrary
             this.tpSub.Margin = new System.Windows.Forms.Padding(5);
             this.tpSub.Name = "tpSub";
             this.tpSub.Padding = new System.Windows.Forms.Padding(5);
-            this.tpSub.Size = new System.Drawing.Size(1057, 573);
+            this.tpSub.Size = new System.Drawing.Size(1059, 577);
             this.tpSub.TabIndex = 1;
             this.tpSub.Text = "Абонемент";
             // 
@@ -388,29 +382,19 @@ namespace MyLibrary
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox2);
             this.splitContainer2.Panel1.Controls.Add(this.label1);
             this.splitContainer2.Panel1.Controls.Add(this.tableLayoutPanel1);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel10);
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer2.Size = new System.Drawing.Size(1047, 563);
-            this.splitContainer2.SplitterDistance = 278;
+            this.splitContainer2.Size = new System.Drawing.Size(1049, 567);
+            this.splitContainer2.SplitterDistance = 279;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MyLibrary.Properties.Resources.icon_login;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -425,7 +409,7 @@ namespace MyLibrary
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.04036F));
@@ -439,7 +423,7 @@ namespace MyLibrary
             this.tableLayoutPanel1.Controls.Add(this.lbPhoneSub, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 68);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 69);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(7);
             this.tableLayoutPanel1.RowCount = 4;
@@ -447,7 +431,7 @@ namespace MyLibrary
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1047, 210);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1049, 210);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lbDateSub
@@ -523,38 +507,40 @@ namespace MyLibrary
             // 
             // tableLayoutPanel10
             // 
+            this.tableLayoutPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.16667F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.83333F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 328F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 332F));
             this.tableLayoutPanel10.Controls.Add(this.button14, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.textBox3, 1, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 238);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 235);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1047, 43);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1049, 49);
             this.tableLayoutPanel10.TabIndex = 1;
             this.tableLayoutPanel10.Visible = false;
             // 
             // button14
             // 
             this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button14.Location = new System.Drawing.Point(793, 3);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(178, 37);
+            this.button14.Size = new System.Drawing.Size(178, 43);
             this.button14.TabIndex = 0;
             this.button14.Text = "Пошук";
-            this.button14.UseVisualStyleBackColor = true;
+            this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label18
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(119, 5);
+            this.label18.Location = new System.Drawing.Point(118, 8);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(159, 32);
             this.label18.TabIndex = 1;
@@ -563,21 +549,22 @@ namespace MyLibrary
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(284, 3);
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.textBox3.Location = new System.Drawing.Point(283, 5);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(339, 39);
             this.textBox3.TabIndex = 2;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.70916F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.29084F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
             this.tableLayoutPanel2.Controls.Add(this.BookDate3, 4, 3);
             this.tableLayoutPanel2.Controls.Add(this.AuthorBook3, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.NameBook3, 1, 3);
@@ -607,7 +594,7 @@ namespace MyLibrary
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.38462F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1047, 240);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1049, 240);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // BookDate3
@@ -616,9 +603,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookDate3.AutoSize = true;
-            this.BookDate3.Location = new System.Drawing.Point(864, 190);
+            this.BookDate3.Location = new System.Drawing.Point(858, 190);
             this.BookDate3.Name = "BookDate3";
-            this.BookDate3.Size = new System.Drawing.Size(172, 42);
+            this.BookDate3.Size = new System.Drawing.Size(180, 42);
             this.BookDate3.TabIndex = 15;
             // 
             // AuthorBook3
@@ -627,7 +614,7 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorBook3.AutoSize = true;
-            this.AuthorBook3.Location = new System.Drawing.Point(373, 190);
+            this.AuthorBook3.Location = new System.Drawing.Point(367, 190);
             this.AuthorBook3.Name = "AuthorBook3";
             this.AuthorBook3.Size = new System.Drawing.Size(239, 42);
             this.AuthorBook3.TabIndex = 14;
@@ -638,9 +625,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameBook3.AutoSize = true;
-            this.NameBook3.Location = new System.Drawing.Point(93, 190);
+            this.NameBook3.Location = new System.Drawing.Point(92, 190);
             this.NameBook3.Name = "NameBook3";
-            this.NameBook3.Size = new System.Drawing.Size(273, 42);
+            this.NameBook3.Size = new System.Drawing.Size(268, 42);
             this.NameBook3.TabIndex = 13;
             // 
             // BookDate2
@@ -649,9 +636,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookDate2.AutoSize = true;
-            this.BookDate2.Location = new System.Drawing.Point(864, 127);
+            this.BookDate2.Location = new System.Drawing.Point(858, 127);
             this.BookDate2.Name = "BookDate2";
-            this.BookDate2.Size = new System.Drawing.Size(172, 62);
+            this.BookDate2.Size = new System.Drawing.Size(180, 62);
             this.BookDate2.TabIndex = 12;
             // 
             // AuthorBook2
@@ -660,7 +647,7 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorBook2.AutoSize = true;
-            this.AuthorBook2.Location = new System.Drawing.Point(373, 127);
+            this.AuthorBook2.Location = new System.Drawing.Point(367, 127);
             this.AuthorBook2.Name = "AuthorBook2";
             this.AuthorBook2.Size = new System.Drawing.Size(239, 62);
             this.AuthorBook2.TabIndex = 11;
@@ -671,9 +658,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameBook2.AutoSize = true;
-            this.NameBook2.Location = new System.Drawing.Point(93, 127);
+            this.NameBook2.Location = new System.Drawing.Point(92, 127);
             this.NameBook2.Name = "NameBook2";
-            this.NameBook2.Size = new System.Drawing.Size(273, 62);
+            this.NameBook2.Size = new System.Drawing.Size(268, 62);
             this.NameBook2.TabIndex = 10;
             // 
             // BookDate1
@@ -682,9 +669,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BookDate1.AutoSize = true;
-            this.BookDate1.Location = new System.Drawing.Point(864, 61);
+            this.BookDate1.Location = new System.Drawing.Point(858, 61);
             this.BookDate1.Name = "BookDate1";
-            this.BookDate1.Size = new System.Drawing.Size(172, 65);
+            this.BookDate1.Size = new System.Drawing.Size(180, 65);
             this.BookDate1.TabIndex = 9;
             // 
             // AuthorBook1
@@ -693,7 +680,7 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorBook1.AutoSize = true;
-            this.AuthorBook1.Location = new System.Drawing.Point(373, 61);
+            this.AuthorBook1.Location = new System.Drawing.Point(367, 61);
             this.AuthorBook1.Name = "AuthorBook1";
             this.AuthorBook1.Size = new System.Drawing.Size(239, 65);
             this.AuthorBook1.TabIndex = 8;
@@ -704,15 +691,15 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameBook1.AutoSize = true;
-            this.NameBook1.Location = new System.Drawing.Point(93, 61);
+            this.NameBook1.Location = new System.Drawing.Point(92, 61);
             this.NameBook1.Name = "NameBook1";
-            this.NameBook1.Size = new System.Drawing.Size(273, 65);
+            this.NameBook1.Size = new System.Drawing.Size(268, 65);
             this.NameBook1.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(373, 8);
+            this.label9.Location = new System.Drawing.Point(367, 8);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 32);
             this.label9.TabIndex = 2;
@@ -724,9 +711,9 @@ namespace MyLibrary
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(93, 8);
+            this.label8.Location = new System.Drawing.Point(92, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(273, 52);
+            this.label8.Size = new System.Drawing.Size(268, 52);
             this.label8.TabIndex = 1;
             this.label8.Text = "Назва";
             // 
@@ -738,7 +725,7 @@ namespace MyLibrary
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(11, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 52);
+            this.label7.Size = new System.Drawing.Size(74, 52);
             this.label7.TabIndex = 0;
             this.label7.Text = "ID";
             // 
@@ -772,7 +759,7 @@ namespace MyLibrary
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(864, 8);
+            this.label10.Location = new System.Drawing.Point(858, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(172, 52);
             this.label10.TabIndex = 3;
@@ -781,11 +768,35 @@ namespace MyLibrary
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(619, 8);
+            this.label19.Location = new System.Drawing.Point(613, 8);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(188, 32);
             this.label19.TabIndex = 16;
             this.label19.Text = "Видавництво";
+            // 
+            // Publishing1
+            // 
+            this.Publishing1.AutoSize = true;
+            this.Publishing1.Location = new System.Drawing.Point(613, 61);
+            this.Publishing1.Name = "Publishing1";
+            this.Publishing1.Size = new System.Drawing.Size(0, 32);
+            this.Publishing1.TabIndex = 17;
+            // 
+            // Publishing2
+            // 
+            this.Publishing2.AutoSize = true;
+            this.Publishing2.Location = new System.Drawing.Point(613, 127);
+            this.Publishing2.Name = "Publishing2";
+            this.Publishing2.Size = new System.Drawing.Size(0, 32);
+            this.Publishing2.TabIndex = 18;
+            // 
+            // Publishing3
+            // 
+            this.Publishing3.AutoSize = true;
+            this.Publishing3.Location = new System.Drawing.Point(613, 190);
+            this.Publishing3.Name = "Publishing3";
+            this.Publishing3.Size = new System.Drawing.Size(0, 32);
+            this.Publishing3.TabIndex = 19;
             // 
             // tpControl
             // 
@@ -793,7 +804,7 @@ namespace MyLibrary
             this.tpControl.Location = new System.Drawing.Point(4, 37);
             this.tpControl.Name = "tpControl";
             this.tpControl.Padding = new System.Windows.Forms.Padding(3);
-            this.tpControl.Size = new System.Drawing.Size(1057, 573);
+            this.tpControl.Size = new System.Drawing.Size(1059, 577);
             this.tpControl.TabIndex = 2;
             this.tpControl.Text = "Облік";
             this.tpControl.UseVisualStyleBackColor = true;
@@ -814,27 +825,27 @@ namespace MyLibrary
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer3.Size = new System.Drawing.Size(1051, 567);
-            this.splitContainer3.SplitterDistance = 450;
+            this.splitContainer3.Size = new System.Drawing.Size(1053, 571);
+            this.splitContainer3.SplitterDistance = 453;
             this.splitContainer3.TabIndex = 0;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.groupBox1.Controls.Add(this.tableLayoutPanel3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1051, 450);
+            this.groupBox1.Size = new System.Drawing.Size(1053, 453);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Додати книгу";
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.LightGray;
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.16844F));
@@ -862,18 +873,19 @@ namespace MyLibrary
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1045, 416);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1047, 419);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button7.Location = new System.Drawing.Point(766, 390);
+            this.button7.Location = new System.Drawing.Point(768, 393);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(268, 15);
             this.button7.TabIndex = 1;
             this.button7.Text = "Додати";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label12
@@ -888,7 +900,7 @@ namespace MyLibrary
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(11, 55);
+            this.label13.Location = new System.Drawing.Point(11, 56);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 29);
             this.label13.TabIndex = 1;
@@ -897,7 +909,7 @@ namespace MyLibrary
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(11, 205);
+            this.label14.Location = new System.Drawing.Point(11, 208);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 29);
             this.label14.TabIndex = 2;
@@ -906,7 +918,7 @@ namespace MyLibrary
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(11, 293);
+            this.label15.Location = new System.Drawing.Point(11, 296);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(174, 29);
             this.label15.TabIndex = 3;
@@ -915,7 +927,7 @@ namespace MyLibrary
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 346);
+            this.label16.Location = new System.Drawing.Point(11, 349);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(158, 29);
             this.label16.TabIndex = 4;
@@ -923,10 +935,11 @@ namespace MyLibrary
             // 
             // tbTitile
             // 
+            this.tbTitile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbTitile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbTitile.Location = new System.Drawing.Point(239, 11);
+            this.tbTitile.Location = new System.Drawing.Point(240, 11);
             this.tbTitile.Name = "tbTitile";
-            this.tbTitile.Size = new System.Drawing.Size(795, 35);
+            this.tbTitile.Size = new System.Drawing.Size(796, 35);
             this.tbTitile.TabIndex = 5;
             // 
             // tableLayoutPanel4
@@ -939,57 +952,61 @@ namespace MyLibrary
             this.tableLayoutPanel4.Controls.Add(this.button3, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.cbAuthor, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(239, 58);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(240, 59);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.16667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.83334F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(795, 143);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(796, 145);
             this.tableLayoutPanel4.TabIndex = 6;
             // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(610, 51);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
+            this.button4.Location = new System.Drawing.Point(611, 52);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(182, 35);
             this.button4.TabIndex = 3;
             this.button4.Text = "Видалити";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lbAuthor
             // 
+            this.lbAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.lbAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAuthor.FormattingEnabled = true;
             this.lbAuthor.ItemHeight = 29;
-            this.lbAuthor.Location = new System.Drawing.Point(3, 51);
+            this.lbAuthor.Location = new System.Drawing.Point(3, 52);
             this.lbAuthor.Name = "lbAuthor";
-            this.lbAuthor.Size = new System.Drawing.Size(601, 89);
+            this.lbAuthor.Size = new System.Drawing.Size(602, 90);
             this.lbAuthor.TabIndex = 1;
             // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(610, 3);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
+            this.button3.Location = new System.Drawing.Point(611, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(182, 35);
             this.button3.TabIndex = 2;
             this.button3.Text = "Додати";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // cbAuthor
             // 
             this.cbAuthor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cbAuthor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.cbAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbAuthor.FormattingEnabled = true;
             this.cbAuthor.Location = new System.Drawing.Point(3, 3);
             this.cbAuthor.Name = "cbAuthor";
-            this.cbAuthor.Size = new System.Drawing.Size(601, 37);
+            this.cbAuthor.Size = new System.Drawing.Size(602, 37);
             this.cbAuthor.Sorted = true;
             this.cbAuthor.TabIndex = 4;
             this.cbAuthor.Click += new System.EventHandler(this.cbAuthor_Click);
@@ -997,7 +1014,7 @@ namespace MyLibrary
             // splitContainer4
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(239, 208);
+            this.splitContainer4.Location = new System.Drawing.Point(240, 211);
             this.splitContainer4.Name = "splitContainer4";
             // 
             // splitContainer4.Panel1
@@ -1007,12 +1024,13 @@ namespace MyLibrary
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.button5);
-            this.splitContainer4.Size = new System.Drawing.Size(795, 81);
+            this.splitContainer4.Size = new System.Drawing.Size(796, 81);
             this.splitContainer4.SplitterDistance = 601;
             this.splitContainer4.TabIndex = 7;
             // 
             // tbGenre
             // 
+            this.tbGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbGenre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGenre.Location = new System.Drawing.Point(0, 0);
             this.tbGenre.Multiline = true;
@@ -1023,13 +1041,14 @@ namespace MyLibrary
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Location = new System.Drawing.Point(0, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(190, 81);
+            this.button5.Size = new System.Drawing.Size(191, 81);
             this.button5.TabIndex = 0;
             this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // tableLayoutPanel5
@@ -1038,23 +1057,23 @@ namespace MyLibrary
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0956F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.9044F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 337F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 345F));
             this.tableLayoutPanel5.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.tbYear, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.tbAmount, 2, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(236, 346);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(237, 349);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(801, 40);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(802, 40);
             this.tableLayoutPanel5.TabIndex = 9;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(235, 1);
+            this.label17.Location = new System.Drawing.Point(231, 1);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(124, 29);
             this.label17.TabIndex = 0;
@@ -1062,24 +1081,26 @@ namespace MyLibrary
             // 
             // tbYear
             // 
+            this.tbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbYear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbYear.Location = new System.Drawing.Point(4, 4);
             this.tbYear.Name = "tbYear";
-            this.tbYear.Size = new System.Drawing.Size(224, 35);
+            this.tbYear.Size = new System.Drawing.Size(220, 35);
             this.tbYear.TabIndex = 1;
             // 
             // tbAmount
             // 
+            this.tbAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAmount.Location = new System.Drawing.Point(465, 4);
+            this.tbAmount.Location = new System.Drawing.Point(458, 4);
             this.tbAmount.Name = "tbAmount";
-            this.tbAmount.Size = new System.Drawing.Size(332, 35);
+            this.tbAmount.Size = new System.Drawing.Size(340, 35);
             this.tbAmount.TabIndex = 2;
             // 
             // splitContainer8
             // 
             this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.Location = new System.Drawing.Point(239, 296);
+            this.splitContainer8.Location = new System.Drawing.Point(240, 299);
             this.splitContainer8.Name = "splitContainer8";
             // 
             // splitContainer8.Panel1
@@ -1089,12 +1110,13 @@ namespace MyLibrary
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.button10);
-            this.splitContainer8.Size = new System.Drawing.Size(795, 46);
+            this.splitContainer8.Size = new System.Drawing.Size(796, 46);
             this.splitContainer8.SplitterDistance = 602;
             this.splitContainer8.TabIndex = 10;
             // 
             // tbPubHouse
             // 
+            this.tbPubHouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbPubHouse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbPubHouse.Location = new System.Drawing.Point(0, 0);
             this.tbPubHouse.Multiline = true;
@@ -1105,47 +1127,50 @@ namespace MyLibrary
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button10.Location = new System.Drawing.Point(0, 0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(189, 46);
+            this.button10.Size = new System.Drawing.Size(190, 46);
             this.button10.TabIndex = 0;
             this.button10.Text = "...";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.Location = new System.Drawing.Point(11, 390);
+            this.button13.Location = new System.Drawing.Point(11, 393);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(221, 15);
+            this.button13.Size = new System.Drawing.Size(222, 15);
             this.button13.TabIndex = 11;
             this.button13.Text = "Очистити";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.groupBox2.Controls.Add(this.tableLayoutPanel8);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1051, 113);
+            this.groupBox2.Size = new System.Drawing.Size(1053, 114);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Редагувати книгу";
             // 
             // tableLayoutPanel8
             // 
+            this.tableLayoutPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel8.ColumnCount = 5;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.59725F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.40275F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
             this.tableLayoutPanel8.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tbSerchBook, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.button11, 4, 0);
@@ -1156,14 +1181,14 @@ namespace MyLibrary
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1045, 79);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1047, 80);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(94, 25);
+            this.label5.Location = new System.Drawing.Point(93, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 29);
             this.label5.TabIndex = 0;
@@ -1172,44 +1197,48 @@ namespace MyLibrary
             // tbSerchBook
             // 
             this.tbSerchBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSerchBook.Location = new System.Drawing.Point(216, 22);
+            this.tbSerchBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tbSerchBook.Location = new System.Drawing.Point(215, 22);
             this.tbSerchBook.Name = "tbSerchBook";
-            this.tbSerchBook.Size = new System.Drawing.Size(259, 35);
+            this.tbSerchBook.Size = new System.Drawing.Size(258, 35);
             this.tbSerchBook.TabIndex = 1;
             // 
             // button11
             // 
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button11.Enabled = false;
-            this.button11.Location = new System.Drawing.Point(882, 14);
+            this.button11.Location = new System.Drawing.Point(884, 15);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(160, 50);
             this.button11.TabIndex = 3;
             this.button11.Text = "Видалити";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button6.Location = new System.Drawing.Point(494, 14);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
+            this.button6.Location = new System.Drawing.Point(492, 15);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(160, 50);
             this.button6.TabIndex = 2;
             this.button6.Text = "Пошук";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button12
             // 
             this.button12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button12.Enabled = false;
-            this.button12.Location = new System.Drawing.Point(670, 14);
+            this.button12.Location = new System.Drawing.Point(668, 15);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(160, 50);
             this.button12.TabIndex = 4;
             this.button12.Text = "Редагувати";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // tpClient
@@ -1218,7 +1247,7 @@ namespace MyLibrary
             this.tpClient.Location = new System.Drawing.Point(4, 37);
             this.tpClient.Name = "tpClient";
             this.tpClient.Padding = new System.Windows.Forms.Padding(3);
-            this.tpClient.Size = new System.Drawing.Size(1057, 573);
+            this.tpClient.Size = new System.Drawing.Size(1059, 577);
             this.tpClient.TabIndex = 3;
             this.tpClient.Text = "Відвідувачі";
             this.tpClient.UseVisualStyleBackColor = true;
@@ -1237,8 +1266,8 @@ namespace MyLibrary
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.groupBox4);
-            this.splitContainer7.Size = new System.Drawing.Size(1051, 567);
-            this.splitContainer7.SplitterDistance = 162;
+            this.splitContainer7.Size = new System.Drawing.Size(1053, 571);
+            this.splitContainer7.SplitterDistance = 163;
             this.splitContainer7.TabIndex = 0;
             // 
             // groupBox3
@@ -1246,19 +1275,20 @@ namespace MyLibrary
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.groupBox3.Controls.Add(this.tableLayoutPanel6);
             this.groupBox3.Controls.Add(this.button8);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox3.Location = new System.Drawing.Point(5, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1043, 156);
+            this.groupBox3.Size = new System.Drawing.Size(1045, 157);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Продовжити абонплату";
             // 
             // tableLayoutPanel6
             // 
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1266,19 +1296,19 @@ namespace MyLibrary
             this.tableLayoutPanel6.Controls.Add(this.label21, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.tbClCount, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.tbClId, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(225, 50);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(283, 51);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(551, 100);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(476, 100);
             this.tableLayoutPanel6.TabIndex = 5;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label20.Location = new System.Drawing.Point(230, 0);
+            this.label20.Location = new System.Drawing.Point(193, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(42, 50);
             this.label20.TabIndex = 0;
@@ -1288,7 +1318,7 @@ namespace MyLibrary
             // 
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label21.Location = new System.Drawing.Point(58, 50);
+            this.label21.Location = new System.Drawing.Point(21, 50);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(214, 50);
             this.label21.TabIndex = 1;
@@ -1296,16 +1326,18 @@ namespace MyLibrary
             // 
             // tbClCount
             // 
+            this.tbClCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClCount.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClCount.Location = new System.Drawing.Point(278, 53);
+            this.tbClCount.Location = new System.Drawing.Point(241, 53);
             this.tbClCount.Name = "tbClCount";
             this.tbClCount.Size = new System.Drawing.Size(220, 35);
             this.tbClCount.TabIndex = 3;
             // 
             // tbClId
             // 
+            this.tbClId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClId.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClId.Location = new System.Drawing.Point(278, 3);
+            this.tbClId.Location = new System.Drawing.Point(241, 3);
             this.tbClId.Name = "tbClId";
             this.tbClId.Size = new System.Drawing.Size(220, 35);
             this.tbClId.TabIndex = 2;
@@ -1313,8 +1345,8 @@ namespace MyLibrary
             // button8
             // 
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button8.Location = new System.Drawing.Point(803, 50);
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
+            this.button8.Location = new System.Drawing.Point(805, 51);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(237, 103);
             this.button8.TabIndex = 4;
@@ -1324,20 +1356,20 @@ namespace MyLibrary
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.groupBox4.Controls.Add(this.tableLayoutPanel7);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1051, 401);
+            this.groupBox4.Size = new System.Drawing.Size(1053, 404);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Реєстрація клієнтського абоніменту";
             // 
             // tableLayoutPanel7
             // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1360,16 +1392,16 @@ namespace MyLibrary
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1045, 367);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1047, 370);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label22.Location = new System.Drawing.Point(388, 10);
+            this.label22.Location = new System.Drawing.Point(389, 10);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(131, 68);
+            this.label22.Size = new System.Drawing.Size(131, 71);
             this.label22.TabIndex = 0;
             this.label22.Text = "Призвіще:";
             // 
@@ -1377,7 +1409,7 @@ namespace MyLibrary
             // 
             this.label23.AutoSize = true;
             this.label23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label23.Location = new System.Drawing.Point(458, 78);
+            this.label23.Location = new System.Drawing.Point(459, 81);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(61, 35);
             this.label23.TabIndex = 1;
@@ -1387,7 +1419,7 @@ namespace MyLibrary
             // 
             this.label24.AutoSize = true;
             this.label24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label24.Location = new System.Drawing.Point(304, 113);
+            this.label24.Location = new System.Drawing.Point(305, 116);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(215, 57);
             this.label24.TabIndex = 2;
@@ -1397,7 +1429,7 @@ namespace MyLibrary
             // 
             this.label25.AutoSize = true;
             this.label25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label25.Location = new System.Drawing.Point(414, 170);
+            this.label25.Location = new System.Drawing.Point(415, 173);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(105, 69);
             this.label25.TabIndex = 3;
@@ -1405,9 +1437,9 @@ namespace MyLibrary
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button9.Location = new System.Drawing.Point(805, 242);
+            this.button9.Location = new System.Drawing.Point(807, 245);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(237, 122);
             this.button9.TabIndex = 4;
@@ -1417,64 +1449,67 @@ namespace MyLibrary
             // 
             // tbClLN
             // 
+            this.tbClLN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClLN.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClLN.Location = new System.Drawing.Point(525, 13);
+            this.tbClLN.Location = new System.Drawing.Point(526, 13);
             this.tbClLN.Name = "tbClLN";
             this.tbClLN.Size = new System.Drawing.Size(220, 35);
             this.tbClLN.TabIndex = 5;
             // 
             // tbClFN
             // 
+            this.tbClFN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClFN.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClFN.Location = new System.Drawing.Point(525, 81);
+            this.tbClFN.Location = new System.Drawing.Point(526, 84);
             this.tbClFN.Name = "tbClFN";
             this.tbClFN.Size = new System.Drawing.Size(220, 35);
             this.tbClFN.TabIndex = 6;
             // 
             // tbClPh
             // 
+            this.tbClPh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClPh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClPh.Location = new System.Drawing.Point(525, 116);
+            this.tbClPh.Location = new System.Drawing.Point(526, 119);
             this.tbClPh.Name = "tbClPh";
             this.tbClPh.Size = new System.Drawing.Size(220, 35);
             this.tbClPh.TabIndex = 7;
             // 
             // tbClP
             // 
+            this.tbClP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbClP.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbClP.Location = new System.Drawing.Point(525, 173);
+            this.tbClP.Location = new System.Drawing.Point(526, 176);
             this.tbClP.Name = "tbClP";
             this.tbClP.Size = new System.Drawing.Size(220, 35);
             this.tbClP.TabIndex = 8;
             // 
-            // Publishing1
+            // pictureBox1
             // 
-            this.Publishing1.AutoSize = true;
-            this.Publishing1.Location = new System.Drawing.Point(619, 61);
-            this.Publishing1.Name = "Publishing1";
-            this.Publishing1.Size = new System.Drawing.Size(0, 32);
-            this.Publishing1.TabIndex = 17;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::MyLibrary.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(593, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Publishing2
+            // pictureBox2
             // 
-            this.Publishing2.AutoSize = true;
-            this.Publishing2.Location = new System.Drawing.Point(619, 127);
-            this.Publishing2.Name = "Publishing2";
-            this.Publishing2.Size = new System.Drawing.Size(0, 32);
-            this.Publishing2.TabIndex = 18;
-            // 
-            // Publishing3
-            // 
-            this.Publishing3.AutoSize = true;
-            this.Publishing3.Location = new System.Drawing.Point(619, 190);
-            this.Publishing3.Name = "Publishing3";
-            this.Publishing3.Size = new System.Drawing.Size(0, 32);
-            this.Publishing3.TabIndex = 19;
+            this.pictureBox2.Image = global::MyLibrary.Properties.Resources.icon_login;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1067, 618);
             this.Controls.Add(this.tabControl);
@@ -1494,7 +1529,6 @@ namespace MyLibrary
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
@@ -1504,7 +1538,6 @@ namespace MyLibrary
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -1546,13 +1579,13 @@ namespace MyLibrary
             this.groupBox4.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tpBook;
         private System.Windows.Forms.TabPage tpSub;
         private TabPage tpControl;
@@ -1657,5 +1690,6 @@ namespace MyLibrary
         private Label Publishing1;
         private Label Publishing2;
         private Label Publishing3;
+        private TabControl tabControl;
     }
 }

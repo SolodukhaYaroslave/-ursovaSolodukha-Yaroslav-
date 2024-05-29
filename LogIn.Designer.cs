@@ -59,6 +59,7 @@
             // 
             // tbID
             // 
+            this.tbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbID.Location = new System.Drawing.Point(123, 46);
             this.tbID.Multiline = true;
             this.tbID.Name = "tbID";
@@ -67,6 +68,7 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.tbPassword.Location = new System.Drawing.Point(123, 100);
             this.tbPassword.Multiline = true;
             this.tbPassword.Name = "tbPassword";
@@ -75,13 +77,14 @@
             // 
             // btEnterLogIn
             // 
+            this.btEnterLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.btEnterLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btEnterLogIn.Location = new System.Drawing.Point(430, 155);
             this.btEnterLogIn.Name = "btEnterLogIn";
             this.btEnterLogIn.Size = new System.Drawing.Size(176, 37);
             this.btEnterLogIn.TabIndex = 4;
             this.btEnterLogIn.Text = "Далі";
-            this.btEnterLogIn.UseVisualStyleBackColor = true;
+            this.btEnterLogIn.UseVisualStyleBackColor = false;
             this.btEnterLogIn.Click += new System.EventHandler(this.btEnterLogIn_Click);
             // 
             // checkBox1
@@ -99,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(618, 205);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btEnterLogIn);

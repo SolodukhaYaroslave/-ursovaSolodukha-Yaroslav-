@@ -35,28 +35,31 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button3.Location = new System.Drawing.Point(12, 390);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 42);
             this.button3.TabIndex = 5;
             this.button3.Text = "Відмінити";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(193)))), ((int)(((byte)(142)))));
             this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button4.Location = new System.Drawing.Point(191, 390);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(155, 42);
             this.button4.TabIndex = 4;
             this.button4.Text = "Далі";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkedListBox2
             // 
+            this.checkedListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(200)))));
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.ItemHeight = 20;
             this.checkedListBox2.Location = new System.Drawing.Point(12, 12);
@@ -68,6 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(183)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(358, 444);
             this.ControlBox = false;
             this.Controls.Add(this.checkedListBox2);
